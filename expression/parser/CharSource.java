@@ -1,0 +1,9 @@
+package expression.parser;
+
+
+public interface CharSource {
+    boolean hasNext();
+    char next();
+    char prev();
+    IllegalArgumentException error(String message);
+}
